@@ -1,0 +1,486 @@
+header h1::-moz-selection, header h2::-moz-selection, header h3::-moz-selection, header h4::-moz-selection, header p::-moz-selection, header a::-moz-selection, header span::-moz-selection {
+  background: #252525;
+}header h1::selection, header h2::selection, header h3::selection, header h4::selection, header p::selection, header a::selection, header span::selection {
+  background: #252525;
+}
+
+footer h1::-moz-selection, footer h2::-moz-selection, footer h3::-moz-selection, footer h4::-moz-selection, footer p::-moz-selection, footer a::-moz-selection, footer span::-moz-selection, footer br::-moz-selection, footer button::-moz-selection {
+  background: #CDCDCD;
+}
+
+footer h1::selection, footer h2::selection, footer h3::selection, footer h4::selection, footer p::selection, footer a::selection, footer span::selection, footer br::selection, footer button::selection {
+  background: #CDCDCD;
+}
+
+body {
+  background: #303F2C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-family: "Space Grotesk", sans-serif;
+}
+body .overlay {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 25px;
+  overflow: hidden;
+}
+body .overlay a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 16px;
+  color: #EFECE7;
+}
+body .overlay a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+}
+body header {
+  width: 50%;
+  background: #303F2C;
+  color: #EFECE7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header nav, body header section, body header main {
+  width: 93%;
+  margin: 0 auto;
+}
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+body header nav h1 {
+  font-weight: 100;
+  font-size: 12px;
+}
+body header nav > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+body header nav > :nth-child(2) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: right;
+  margin-top: 15px;
+}
+body header nav > :nth-child(2) > :nth-child(1) a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 16px;
+}
+body header nav > :nth-child(2) > :nth-child(1) a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+}
+body header nav > :nth-child(2) .burger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #EFECE7;
+  place-content: center;
+  gap: 5px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  margin-top: 12px;
+  z-index: 1001;
+  position: absolute;
+  top: 10px;
+  right: 18px;
+}
+body header nav > :nth-child(2) .burger > :nth-child(1), body header nav > :nth-child(2) .burger > :nth-child(2) {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1.8px solid #303F2C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body header nav > :nth-child(2) .burger.open {
+  gap: 0px;
+}
+body header nav > :nth-child(2) .burger.open > :nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body header nav > :nth-child(2) .burger.open > :nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 50px;
+}
+body header section > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header section > :nth-child(1) > :nth-child(1), body header section > :nth-child(1) > :nth-child(2) {
+  height: 180px;
+  width: 180px;
+  background: transparent;
+  border-radius: 50%;
+  border: 3.4px solid white;
+}
+body header section > :nth-child(1) > :nth-child(1) {
+  margin-right: -87.5px;
+  border: 3.4px solid #88B781;
+  background: #88B781;
+}
+body header main h2, body header main h3, body header main h4 {
+  font-weight: 100;
+}
+body header main h2 {
+  margin-top: 30px;
+  font-size: 12px;
+}
+body header main > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+body header main > :nth-child(2) > :nth-child(1) {
+  width: 100%;
+  max-width: 295px;
+}
+body header main > :nth-child(2) > :nth-child(1) img {
+  width: 100%;
+}
+body header main > :nth-child(2) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 20px;
+}
+body header main > :nth-child(2) > :nth-child(2) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -20px;
+  letter-spacing: 1.2px;
+}
+body header main > :nth-child(2) > :nth-child(2) h3 span {
+  text-decoration: underline;
+  text-underline-offset: 2.2px;
+}
+body header main > :nth-child(2) > :nth-child(2) h4 {
+  margin-top: 90px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+body header main > :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body header main > :nth-child(3) > :nth-child(1) {
+  border-top: 3px solid white;
+  width: 100%;
+}
+body header main > :nth-child(3) a {
+  text-decoration: none;
+  color: white;
+  margin: 13px 0px;
+  font-size: 12px;
+}
+body header main > :nth-child(3) > :nth-child(3) {
+  border-top: 1.5px solid white;
+  width: 100%;
+}
+body header.open nav h1 {
+  display: none;
+}
+body header.open section, body header.open main {
+  display: none;
+}
+body footer {
+  width: 50%;
+  background: #EFECE7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+body footer > :nth-child(1), body footer article {
+  width: 93%;
+  margin: 0 auto;
+}
+body footer > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 15px;
+}
+body footer > :nth-child(1) h4 {
+  font-size: 12px;
+  color: #597854;
+}
+body footer > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+body footer > :nth-child(2) h2 {
+  all: unset;
+  font-size: 55px;
+  color: #23631A;
+  line-height: 60px;
+  font-weight: bold;
+}
+body footer article {
+  margin-top: 50px;
+  border-top: 1.5px solid #23631A;
+}
+body footer article > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body footer article > :nth-child(1) p {
+  font-size: 11.3px;
+  color: #23631A;
+}
+body footer article > :nth-child(1) > :nth-child(1) {
+  width: 50%;
+}
+body footer article > :nth-child(1) > :nth-child(2) {
+  width: 48%;
+}
+body footer article > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  gap: 4px;
+  margin-top: 60px;
+}
+body footer article > :nth-child(2) button {
+  all: unset;
+  color: #23631A;
+  border: 1px solid #23631A;
+  font-size: 11.5px;
+  border-radius: 20px;
+  padding: 2.5px 10px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body footer article > :nth-child(2) button:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: white;
+  background: #23631A;
+}
+body footer article > :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body footer article > :nth-child(3) > :nth-child(1) {
+  border-top: 3px solid #23631A;
+  width: 100%;
+}
+body footer article > :nth-child(3) a {
+  text-decoration: none;
+  color: #23631A;
+  margin: 13px 0px;
+  font-size: 12px;
+}
+body footer article > :nth-child(3) > :nth-child(3) {
+  border-top: 1.5px solid #23631A;
+  width: 100%;
+}
+body footer.open {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  body header {
+    width: 100%;
+  }
+  body footer {
+    padding: 85px 0px 95px 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 510px) {
+  body .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header nav > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header nav > :nth-child(2) > :nth-child(1) {
+    display: none;
+  }
+  body header nav > :nth-child(2) .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer {
+    padding: 0px;
+  }
+  body footer > :nth-child(2) {
+    margin-top: 10px;
+  }
+  body footer > :nth-child(2) h2 {
+    all: unset;
+    font-size: 40px;
+    color: #23631A;
+    line-height: 43px;
+    font-weight: bold;
+  }
+  body footer article > :nth-child(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  body footer article > :nth-child(1) > :nth-child(1), body footer article > :nth-child(1) > :nth-child(2) {
+    width: 90%;
+  }
+  body footer article > :nth-child(1) > :nth-child(1) p br, body footer article > :nth-child(1) > :nth-child(2) p br {
+    display: none;
+  }
+  body footer article > :nth-child(2) {
+    margin-top: 10px;
+  }
+}
